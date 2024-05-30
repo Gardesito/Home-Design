@@ -283,6 +283,10 @@ span {
   animation: loop 45s linear infinite;
   width: fit-content;
 }
+video {
+  width: 250px;
+  height: 300px;
+}
 
 .imagen {
   display: flex;
@@ -327,7 +331,7 @@ span {
   position: absolute;
   left: 5%;
   top: 75%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Manrope";
   font-weight: 400;
   font-style: normal;
   /*   left: 50%;
@@ -341,7 +345,7 @@ span {
   position: absolute;
   left: 5%;
   top: 88%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Manrope";
   font-weight: 200;
   font-style: normal;
 }
@@ -386,23 +390,100 @@ span {
 .box2,
 .box3,
 .box4 {
+  border: 1px solid white;
   width: 100%;
   height: 100%;
-  background-image: url(https://res.cloudinary.com/dtmziqubb/image/upload/v1712895987/1de1_lthtiu.png);
+  background-image: url(https://res.cloudinary.com/dtmziqubb/image/upload/v1715562452/Sin-t%C3%ADtulo-2-_16_-_8__01_jxaoky.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .box2 {
-  background-image: url(https://res.cloudinary.com/dtmziqubb/image/upload/v1712953312/bob_marley_grande_njmnye.jpg);
+  background-image: url(https://res.cloudinary.com/dtmziqubb/image/upload/v1715562452/Sin-t%C3%ADtulo-2-_16_-_8__05_bsrgyj.jpg);
 }
 
 .box3 {
-  background-image: url(https://res.cloudinary.com/dtmziqubb/image/upload/v1715034889/negraso_eeopfw.png);
+  background-image: url(https://res.cloudinary.com/dtmziqubb/image/upload/v1715562452/Sin-t%C3%ADtulo-2-_16_-_8__04_zix0t0.jpg);
 }
 .box4 {
-  background-image: url(https://res.cloudinary.com/dtmziqubb/image/upload/v1713033461/brandon-lam-Dd_7xDCuuUo-unsplash_w40rsy.jpg);
+  background-image: url(https://res.cloudinary.com/dtmziqubb/image/upload/v1715562451/Sin-t%C3%ADtulo-2-_16_-_8__03_l21bdk.jpg);
 }
 .item {
   display: flex;
+}
+
+/* -- --------------------------------------------------- FOOTER ------------------------------------------------------*/
+
+.pie-pagina {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #121212;
+  position: relative;
+
+  box-shadow: 0px 0px 90px 1px hsl(155, 60%, 55%);
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+  font-family: "Manrope";
+}
+.pie-pagina .grupo-1 .box0 figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box0 figure img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box0 h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box0 p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  /*   background-color: #0d2033;
+ */
+  text-align: center;
+  transition: all 300ms ease;
+  border-radius: 10px;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: var(--primary);
+}
+.pie-pagina .grupo-2 {
+  background-color: #1d242c;
+  padding: 15px 10px;
+  font-family: "Manrope";
+
+  text-align: center;
+  color: #fff;
+}
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
 }
